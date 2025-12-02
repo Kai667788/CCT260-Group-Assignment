@@ -1,0 +1,100 @@
+/* consistent fade in animation through all pages*/
+body.page4 {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#061018, #0a1f2c); 
+    font-family: 'Inter', sans-serif;
+    color: #c7d3d9; 
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Container */
+.container {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    color: #e7faff; 
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #8aa4ad; 
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Dividers */
+hr {
+    border: 0;
+    height: 1px;
+    background: #14303e;
+    margin: 25px 0;
+}
+
+/* Main panel image with border */
+.panel-image {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 3px solid #0d2531; 
+    box-shadow: 0 0 25px rgba(0, 147, 178, 0.25); 
+}
+
+/* Narration box */
+.narration {
+    background: rgba(10, 31, 44, 0.4); 
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #14303e; 
+    text-align: left;
+}
+
+/*Stylized text in narration box*/
+.narration p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 12px 0;
+    color: #c7d3d9; 
+}
+
+/*Chance to restart from beginning */
+.next-button {
+    display: inline-block;
+    margin-top: 26px;
+    padding: 14px 30px;
+    background-color: #3ab6cf;
+    color: #061018;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    transition: 0.3s;
+}
+
+.next-button:hover {
+    background-color: #5fe0ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(95, 224, 255, 0.7);
+}
+
+/*Style for the credits font*/
+.credits p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: left;
+}
